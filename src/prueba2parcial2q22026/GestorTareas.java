@@ -6,6 +6,11 @@ import java.util.Scanner;
 public class GestorTareas {
 
     public static void main(String[] args) {
+        
+           try {
+        System.setOut(new java.io.PrintStream(System.out, true, "UTF-8"));
+         } catch (Exception e) { }
+        
         Scanner scanner = new Scanner(System.in);
         
         if (!Tareas.inicializar()) {
